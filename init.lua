@@ -5,8 +5,8 @@ require('packer_conf')
 require('nvim_tree_conf')
 require('common/telescope')
 require('common/nvim-treesitter')
-
-
+require('common/lualine')
+require('common/neogit')
 -- lsp
 local lspconfig = require("lspconfig")
 local coq = require "coq" -- add this
