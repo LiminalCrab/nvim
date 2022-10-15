@@ -9,6 +9,5 @@ require('common/nvim-treesitter')
 require('common/lualine')
 require('common/neogit')
 require('common/cmpnvim')
-
-
-
+require('common/nvim-luasnip')
+require('common.nvim-auto-save')

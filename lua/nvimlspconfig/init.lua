@@ -28,8 +28,8 @@ local on_attach  = function(client, bufnr)
 end
 -- cmp
 local cmp = require 'cmp'
-local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-
+--cmp_nvim_lsp.default_capabilities
+local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 local server = { 'rome', 'cssls', 'pyright', 'sumneko_lua' }
 for _, lsp in ipairs(server) do
     lspconfig[lsp].setup {
