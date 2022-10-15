@@ -8,5 +8,7 @@ require('common/telescope')
 require('common/nvim-treesitter')
 require('common/lualine')
 require('common/neogit')
+require('common/cmpnvim')
+
 
 
