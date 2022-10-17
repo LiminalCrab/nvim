@@ -28,9 +28,15 @@ local on_attach  = function(client, bufnr)
 end
 -- cmp
 local cmp = require 'cmp'
+local cmp_autopairs = require('nvim-autopairs.completion.cmp')
+cmp.event:on(
+    'confirm_done',
+    cmp_autopairs.on_confirm_done()
+)
+
 --cmp_nvim_lsp.default_capabilities
 local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
-local server = { 'rome', 'cssls', 'pyright', 'sumneko_lua' }
+local server = { 'rome', 'cssls', 'pyright', 'sumneko_lua', 'html' }
 for _, lsp in ipairs(server) do
     lspconfig[lsp].setup {
         on_attach = on_attach,

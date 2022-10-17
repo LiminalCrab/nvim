@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/limin/.local/share/nvim/site/pack/packer/start/auto-save.nvim",
     url = "https://github.com/Pocco81/auto-save.nvim"
   },
+  ["barbar.nvim"] = {
+    loaded = true,
+    path = "/home/limin/.local/share/nvim/site/pack/packer/start/barbar.nvim",
+    url = "https://github.com/romgrk/barbar.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/limin/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -114,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/limin/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/limin/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/limin/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -123,6 +133,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/limin/.local/share/nvim/site/pack/packer/start/neogit",
     url = "https://github.com/TimUntersberger/neogit"
+  },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "/home/limin/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
   },
   ["nvim-cmp"] = {
     loaded = true,

@@ -14,6 +14,7 @@
     },
     window = {
       completion = cmp.config.window.bordered(),
+      
       -- documentation = cmp.config.window.bordered(),
     },
     mapping = cmp.mapping.preset.insert({
@@ -47,7 +48,7 @@
   cmp.setup.cmdline({ '/', '?' }, {
     mapping = cmp.mapping.preset.cmdline(),
     sources = {
-      { name = 'buffer' }
+      { name = 'buffer', }
     }
   })
 
@@ -57,7 +58,7 @@
     sources = cmp.config.sources({
       { name = 'path' }
     }, {
-      { name = 'cmdline' }
+      { name = 'cmdline', keyword_length=3, max_item_count= 6, }
     })
   })
 

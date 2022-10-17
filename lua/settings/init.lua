@@ -21,6 +21,6 @@ set.number = true
 set.relativenumber = true
 set.cursorline = true
 set.hidden = true
-set.undodir = '~/.config/nvim/undodir/'
 set.swapfile = false
+set.undodir = os.getenv("HOME")..'/.config/nvim/undodir'
 vim.o.completeopt = 'menuone,noselect'
